@@ -10,52 +10,45 @@ SetupIconFile=S:\SANDBOX\Github\pack-cheats\ICON\icon64.ico
 OutputBaseFilename=Bobypack de triche
 DisableWelcomePage=no
 
-
 [Languages]
 Name: "french"; MessagesFile: "compiler:Languages\French.isl"
 
 [Components]
-//MODS FPS//
-Name: "Framerate"; Description: "Choisis ton framerate"; Types: full compact custom; Flags: fixed
-Name: "Framerate/30fps"; Description: "30fps dynamique"; Types: custom; Flags: exclusive
-Name: "Framerate/60fps"; Description: "60fps dynamique"; Types: custom; Flags: exclusive
-
-//CONF//
-Name: "TonPC"; Description: "Choisis le type de PC que tu as (n'aie pas honte, je suis le seul qui te juge en ce moment)"; Types: full compact custom; Flags: fixed
-//extra low//
-Name: "TonPC/exlow"; Description: "Une plaque en braille. Je veux jouer en 540p à  3fps, je suis aveugle. (mais je déconne pas avec les musiques!)"; Types: custom; Flags: exclusive
-//minimal//
-Name: "TonPC/Minimal"; Description: "Un minitel. ''Experience de merde, experience quand même'', j'ai appris ça à  la scatinière! "; Types: custom; Flags: exclusive
-//recomandÃ©//
-Name: "TonPC/Recommande"; Description: "Le minimum requis, pourquoi ma vie est-elle si fade?"; Types: custom; Flags: exclusive
-Name: "TonPC/Recommande/reso"; Description: "Ta résolution d'écran:"; Types: full compact custom; 
-Name: "TonPC/Recommande/reso/1008p"; Description: "1008p (Et non c'est pas une erreur, et ça sera plus beau que le 1080p natif)"; Types: custom; Flags: exclusive
-Name: "TonPC/Recommande/reso/2k"; Description: "2k"; Types: custom; Flags: exclusive
-Name: "TonPC/Recommande/reso/4k"; Description: "4k"; Types: custom; Flags: exclusive
-//optimal//
-Name: "TonPC/Optimal"; Description: "Le Rocco Siffredi des PC, les daronnes se cachent quand elles le voient"; Types: custom; Flags: exclusive
-Name: "TonPC/Optimal/reso"; Description: "Ta résolution d'écran:"; Types: full compact custom; 
-Name: "TonPC/Optimal/reso/1008p"; Description: "1008p (toujours pas une erreur, faut suivre Boby)"; Types: custom; Flags: exclusive
-Name: "TonPC/Optimal/reso/2k"; Description: "2k"; Types: custom; Flags: exclusive
-Name: "TonPC/Optimal/reso/4k"; Description: "4k"; Types: custom; Flags: exclusive
-
 //CONFORT//
-Name: "confort"; Description: "Pour ton petit confort d'occidental"; Types: full compact custom; Flags: fixed
-Name: "confort/UI"; Description: "Ton style d'interface utilisateur préféré"; Types: full compact custom; Flags: fixed
-Name: "confort/UI/switch"; Description: "Nintendo Switch"; Types: custom; Flags: exclusive
-Name: "confort/UI/sony"; Description: "Sony Playstation"; Types: custom; Flags: exclusive
-Name: "confort/UI/xbox"; Description: "Microsoft Xboite"; Types: custom; Flags: exclusive
-Name: "confort/mouse"; Description: "Sensibilité de caméra augmentée"; 
-Name: "confort/noDOF"; Description: "Désactivation du flou de ciblage"; 
+Name: "confort"; Description: "Entre confort et assistanat, il n'y a qu'un pas!"; Types: full compact custom; Flags: fixed
+Name: "confort/add60s"; Description: "60 secondes en plus pour les missions chronométrées (L3+R3)"; Types: custom
+Name: "confort/adhereclimb"; Description: "Ne glisse plus lors de l'escalade."; Types: custom
+Name: "confort/durax10"; Description: "Durabilité des armes augmentée x10."; Types: custom
+Name: "confort/moonjump"; Description: "...saute comme sur la lune (omg...)"; Types: custom
+Name: "confort/ignrequpgrades"; Description: "Compos requises pour upgrader le stuff ignorées"; Types: custom
+Name: "confort/itempickup"; Description: "Item pickup (à tester)"; Types: custom
+Name: "confort/jumphigh"; Description: "hauteur de saut augmentée"; Types: custom
+Name: "confort/nostamcharge"; Description: "Endurance des coups chargés ignorée"; Types: custom
+Name: "confort/stealthON"; Description: "Mode furtif toujours activé"; Types: custom
 
-//CHEATS//
-Name: "cheats"; Description: "Les cheats de fillettes"; Types: full compact custom; Flags: fixed
-Name: "cheats/amiibos"; Description: "Amiibos illimités et table de loot 100% (parce que même sans ça c'est aussi chiant pour les vrais hommes...)"; Types: full compact custom;
+//DAMAGE//
+Name: "Damage"; Description: "Augmentation des dégats (pour les fillettes aux petits bras)"; Types: full compact custom; Flags: fixed
 
-//SYSTEM//
-Name: "system"; Description: "Fichiers système"; Types: full compact custom; Flags: fixed
-Name: "system/shader"; Description: "Pack de 30k Shader cache (mets à jour tes drivers graphique!!!)"; Types: full compact custom
-Name: "system/yuzu"; Description: "Yuzu...accessoirement"; Types: full compact custom; Flags: fixed
+Name: "Damage/damageX"; Description: "Multiplicateur de dégats"; Types: custom
+Name: "Damage/damageX/x2"; Description: "Dégats x2"; Types: custom; Flags: exclusive
+Name: "Damage/damageX/x4"; Description: "Dégats x4"; Types: custom; Flags: exclusive
+Name: "Damage/damageX/x10"; Description: "Dégats x10"; Types: custom; Flags: exclusive
+Name: "Damage/damageX/x30"; Description: "Dégats x30"; Types: custom; Flags: exclusive
+
+Name: "Damage/MSBeam"; Description: "Le rayon des la Master Sword augmenté"; Types: custom
+
+//MOUVEMENT PAR DEFAUT//
+Name: "defaultmove"; Description: "Mouvement de Link par défaut"; Types: full compact custom; Flags: fixed
+Name: "defaultmove/run"; Description: "Courir par défaut"; Types: full compact custom; Flags: exclusive
+Name: "defaultmove/walk"; Description: "Marcher par défaut"; Types: full compact custom; Flags: exclusive
+
+//EFFETS D'ENVIRONNEMENT IGNORE//
+Name: "ignoreenv"; Description: "Les effets négatifs de l'environnement sont ignorés. Cheats ''Climatosceptiques ready''"; Types: full compact custom; Flags: fixed
+Name: "ignoreenv/cold"; Description: "Froid et gèle ignorés"; Types: full compact custom
+Name: "ignoreenv/heat"; Description: "Feu et flammes ignorés"; Types: full compact custom
+Name: "ignoreenv/gloom"; Description: "Mal des profondeurs ignoré (à changer)"; Types: full compact custom
+Name: "ignoreenv/slow"; Description: "Ralentissement et paralysie ignorés"; Types: full compact custom
+Name: "ignoreenv/termometer"; Description: "Thermomètre toujours tempéré"; Types: full compact custom
 
 [Files]
 //MODS FPS//
