@@ -10,12 +10,14 @@ SetupIconFile=S:\SANDBOX\Github\pack-cheats\ICON\icon64.ico
 OutputBaseFilename=Bobypack de triche
 DisableWelcomePage=no
 
+
 [Languages]
 Name: "french"; MessagesFile: "compiler:Languages\French.isl"
 
 [Components]
 //CONFORT//
 Name: "confort"; Description: "Entre confort et assistanat, il n'y a qu'un pas!"; Types: full compact custom; Flags: fixed
+
 Name: "confort/add60s"; Description: "60 secondes en plus pour les missions chronométrées (L3+R3)"; Types: custom
 Name: "confort/adhereclimb"; Description: "Ne glisse plus lors de l'escalade."; Types: custom
 Name: "confort/durax10"; Description: "Durabilité des armes augmentée x10."; Types: custom
@@ -39,16 +41,84 @@ Name: "Damage/MSBeam"; Description: "Le rayon des la Master Sword augmenté"; Ty
 
 //MOUVEMENT PAR DEFAUT//
 Name: "defaultmove"; Description: "Mouvement de Link par défaut"; Types: full compact custom; Flags: fixed
+
 Name: "defaultmove/run"; Description: "Courir par défaut"; Types: full compact custom; Flags: exclusive
 Name: "defaultmove/walk"; Description: "Marcher par défaut"; Types: full compact custom; Flags: exclusive
 
 //EFFETS D'ENVIRONNEMENT IGNORE//
 Name: "ignoreenv"; Description: "Les effets négatifs de l'environnement sont ignorés. Cheats ''Climatosceptiques ready''"; Types: full compact custom; Flags: fixed
+
 Name: "ignoreenv/cold"; Description: "Froid et gèle ignorés"; Types: full compact custom
 Name: "ignoreenv/heat"; Description: "Feu et flammes ignorés"; Types: full compact custom
 Name: "ignoreenv/gloom"; Description: "Mal des profondeurs ignoré (à changer)"; Types: full compact custom
 Name: "ignoreenv/slow"; Description: "Ralentissement et paralysie ignorés"; Types: full compact custom
 Name: "ignoreenv/termometer"; Description: "Thermomètre toujours tempéré"; Types: full compact custom
+
+//INFINITE//
+Name: "infinite"; Description: "Vers l'infini et au-delà!!!"; Types: custom; Flags: fixed
+
+Name: "infinite/arrow"; Description: "Flèches infinies"; Types: custom
+Name: "infinite/battery"; Description: "Batteries infinies"; Types: custom
+Name: "infinite/Durability"; Description: "Durabilité infinie"; Types: custom
+Name: "infinite/buff"; Description: "Bonus de nourriture infini"; Types: custom
+Name: "infinite/food"; Description: "Nourriture infinie (à tester)"; Types: custom
+Name: "infinite/health"; Description: "Coeurs infinis"; Types: custom
+Name: "infinite/zonai"; Description: "Matos et appareils Zonai infinis"; Types: custom
+Name: "infinite/stamina"; Description: "Endurance infinie (ne fonctionne que pour la quete de la Master Sword)";
+Name: "infinite/horse"; Description: "Endurance des chevaux infinie"; Types: custom
+Name: "infinite/zonaiduration"; Description: "Temps d'activité des appareils Zonai infini"; Types: custom
+Name: "infinite/zonaidevice"; Description: "Appareils Zonai infinis (à tester, doublon?)"; Types: custom
+
+//INVINCIBLE//
+Name: "invincible"; Description: "Pour compenser ta petite zézette (respect aux petits nibards par contre)"; Types: custom; Flags: fixed
+
+Name: "invincible/nohit"; Description: "Dégats des coups reçus ignorés"; Types: custom
+Name: "invincible/nofalldamage"; Description: "Dégats de chutes ignorés"; Types: custom
+Name: "invincible/godmode"; Description: "GODMODE MODAFUKA!"; Types: custom
+
+//LOCATION//
+Name: "location"; Description: "Pratique quand on n'aime pas se sortir les doigts du cul"; Types: custom; Flags: fixed
+
+Name: "location/korogu"; Description: "Affiche tous les emplacements des Korogu (zoomer sur la map)"; Types: custom
+Name: "location/shrines"; Description: "Affiche tous les emplacements des Sanctuaires"; Types: custom
+
+//SPEEDMOD//
+Name: "speedmod"; Description: "Si tu n'as pas le temps d'apprécier le jeu, et préfères te gâcher le jeu en vitesse"; Types: custom; Flags: fixed
+
+Name: "speedmod/climb"; Description: "Vitesse d'esclade augmentée x2"; Types: custom
+Name: "speedmod/dive"; Description: "Vitesse de plongée augmentée"; Types: custom
+Name: "speedmod/bowcharge"; Description: "Vitesse de bandage de l'arc augmentée"; Types: custom
+Name: "speedmod/weaponcharge"; Description: "Vitesse de charge des armes augmentée"; Types: custom
+Name: "speedmod/glider"; Description: "Vitesse de planage dans le vide augmentée x3 (maintenir A)"; Types: custom
+Name: "speedmod/botnocd"; Description: "Plus de cooldown sur les capacité des prodiges"; Types: custom
+Name: "speedmod/bowfire"; Description: "Vitesse de tir à l'arc augmentée"; Types: custom
+Name: "speedmod/swim"; Description: "Vitesse de nage augmentée x3"; Types: custom
+Name: "speedmod/move"; Description: "Vitesse de déplacement augmentée"; Types: custom
+
+Name: "speedmod/move/x1"; Description: "Vitesse x1"; Types: custom; Flags: exclusive
+Name: "speedmod/move/x1.5"; Description: "Vitesse x1.5"; Types: custom; Flags: exclusive
+Name: "speedmod/move/x2"; Description: "Vitesse x2"; Types: custom; Flags: exclusive
+Name: "speedmod/move/x3"; Description: "Vitesse x3"; Types: custom; Flags: exclusive
+
+//TIME CONTROL//
+Name: "timecontrol"; Description: "Modification du facteur temps de la journée"; Types: custom; Flags: fixed
+
+Name: "timecontrol/FFW"; Description: "Avance le temps de la journée (ZL+R3 à droite)"; Types: custom
+Name: "timecontrol/RW"; Description: "Recule le temps de la journée (ZL+R3 à gauche)"; Types: custom
+Name: "timecontrol/stop"; Description: "Stop le temps de la journée (ZL+R3 à gauche)"; Types: custom
+Name: "timecontrol/resume"; Description: "Reprend le temps de la journée (ZL+R3 à gauche)"; Types: custom
+Name: "timecontrol/duration"; Description: "Défini le temps réel que dure une journée complète dans le jeu"; Types: custom
+Name: "timecontrol/duration/m3"; Description: "3 minutes"; Types: custom; Flags: exclusive
+Name: "timecontrol/duration/m6"; Description: "6 minutes"; Types: custom; Flags: exclusive
+Name: "timecontrol/duration/m12"; Description: "12 minutes"; Types: custom; Flags: exclusive
+Name: "timecontrol/duration/m36"; Description: "36 minutes"; Types: custom; Flags: exclusive
+Name: "timecontrol/duration/m48"; Description: "48 minutes"; Types: custom; Flags: exclusive
+Name: "timecontrol/duration/m60"; Description: "1 heure"; Types: custom; Flags: exclusive
+Name: "timecontrol/duration/h2"; Description: "2 heures"; Types: custom; Flags: exclusive
+Name: "timecontrol/duration/h4"; Description: "4 heures"; Types: custom; Flags: exclusive
+Name: "timecontrol/duration/h12"; Description: "12 heures"; Types: custom; Flags: exclusive
+Name: "timecontrol/duration/h24"; Description: "24 heures"; Types: custom; Flags: exclusive
+
 
 [Files]
 //MODS FPS//
