@@ -18,62 +18,65 @@ Name: "french"; MessagesFile: "compiler:Languages\French.isl"
 //CONFORT//
 Name: "confort"; Description: "Entre confort et assistanat, il n'y a qu'un pas!"; Types: full compact custom; Flags: fixed
 
-Name: "confort/add60s"; Description: "60 secondes en plus pour les missions chronom√©tr√©es (L3+R3)"; Types: custom
+Name: "confort/add60s"; Description: "60 secondes en plus pour les missions chronomÈtrÈes (L3+R3)"; Types: custom
 Name: "confort/adhereclimb"; Description: "Ne glisse plus lors de l'escalade."; Types: custom
-Name: "confort/durax10"; Description: "Durabilit√© des armes augment√©e x10."; Types: custom
-Name: "confort/moonjump"; Description: "...saute comme sur la lune (omg...)"; Types: custom
-Name: "confort/ignrequpgrades"; Description: "Compos requises pour upgrader le stuff ignor√©es"; Types: custom
-Name: "confort/itempickup"; Description: "Item pickup (√† tester)"; Types: custom
-Name: "confort/jumphigh"; Description: "hauteur de saut augment√©e"; Types: custom
-Name: "confort/nostamcharge"; Description: "Endurance des coups charg√©s ignor√©e"; Types: custom
-Name: "confort/stealthON"; Description: "Mode furtif toujours activ√©"; Types: custom
+Name: "confort/durax10"; Description: "DurabilitÈ des armes augmentÈe x10."; Types: custom
+Name: "confort/moonjump"; Description: "...saute comme sur la lune (omg...maintenir X)"; Types: custom
+Name: "confort/ignrequpgrades"; Description: "Compos requises pour upgrader le stuff ignorÈes"; Types: custom
+Name: "confort/itempickup"; Description: "Item pickup (‡ tester)"; Types: custom
+Name: "confort/itempickup/x2"; Description: "Item pickup (‡ tester)"; Types: custom
+Name: "confort/itempickup/x4"; Description: "Item pickup (‡ tester)"; Types: custom
+Name: "confort/itempickup/x8"; Description: "Item pickup (‡ tester)"; Types: custom
+Name: "confort/jumphigh"; Description: "hauteur de saut augmentÈe"; Types: custom
+Name: "confort/nostamcharge"; Description: "Endurance des coups chargÈs ignorÈe"; Types: custom
+Name: "confort/stealthON"; Description: "Mode furtif toujours activÈ"; Types: custom
 
 //DAMAGE//
-Name: "Damage"; Description: "Augmentation des d√©gats (pour les fillettes aux petits bras)"; Types: full compact custom; Flags: fixed
+Name: "Damage"; Description: "Augmentation des dÈgats (pour les fillettes aux petits bras)"; Types: full compact custom; Flags: fixed
 
-Name: "Damage/damageX"; Description: "Multiplicateur de d√©gats"; Types: custom
-Name: "Damage/damageX/x2"; Description: "D√©gats x2"; Types: custom; Flags: exclusive
-Name: "Damage/damageX/x4"; Description: "D√©gats x4"; Types: custom; Flags: exclusive
-Name: "Damage/damageX/x10"; Description: "D√©gats x10"; Types: custom; Flags: exclusive
-Name: "Damage/damageX/x30"; Description: "D√©gats x30"; Types: custom; Flags: exclusive
+Name: "Damage/damageX"; Description: "Multiplicateur de dÈgats"; Types: custom
+Name: "Damage/damageX/x2"; Description: "DÈgats x2"; Types: custom; Flags: exclusive
+Name: "Damage/damageX/x4"; Description: "DÈgats x4"; Types: custom; Flags: exclusive
+Name: "Damage/damageX/x10"; Description: "DÈgats x10"; Types: custom; Flags: exclusive
+Name: "Damage/damageX/x30"; Description: "DÈgats x30"; Types: custom; Flags: exclusive
 
-Name: "Damage/MSBeam"; Description: "Le rayon des la Master Sword augment√©"; Types: custom
+Name: "Damage/MSBeam"; Description: "Le rayon des la Master Sword augmentÈ"; Types: custom
 
 //MOUVEMENT PAR DEFAUT//
-Name: "defaultmove"; Description: "Mouvement de Link par d√©faut"; Types: full compact custom; Flags: fixed
+Name: "defaultmove"; Description: "Mouvement de Link par dÈfaut"; Types: full compact custom; Flags: fixed
 
-Name: "defaultmove/run"; Description: "Courir par d√©faut"; Types: full compact custom; Flags: exclusive
-Name: "defaultmove/walk"; Description: "Marcher par d√©faut"; Types: full compact custom; Flags: exclusive
+Name: "defaultmove/run"; Description: "Courir par dÈfaut"; Types: full compact custom; Flags: exclusive
+Name: "defaultmove/walk"; Description: "Marcher par dÈfaut"; Types: full compact custom; Flags: exclusive
 
 //EFFETS D'ENVIRONNEMENT IGNORE//
-Name: "ignoreenv"; Description: "Les effets n√©gatifs de l'environnement sont ignor√©s. Cheats ''Climatosceptiques ready''"; Types: full compact custom; Flags: fixed
+Name: "ignoreenv"; Description: "Les effets nÈgatifs de l'environnement sont ignorÈs. Cheats ''Climatosceptiques ready''"; Types: full compact custom; Flags: fixed
 
-Name: "ignoreenv/cold"; Description: "Froid et g√®le ignor√©s"; Types: full compact custom
-Name: "ignoreenv/heat"; Description: "Feu et flammes ignor√©s"; Types: full compact custom
-Name: "ignoreenv/gloom"; Description: "Mal des profondeurs ignor√© (√† changer)"; Types: full compact custom
-Name: "ignoreenv/slow"; Description: "Ralentissement et paralysie ignor√©s"; Types: full compact custom
-Name: "ignoreenv/termometer"; Description: "Thermom√®tre toujours temp√©r√©"; Types: full compact custom
+Name: "ignoreenv/cold"; Description: "Froid et gËle ignorÈs"; Types: full compact custom
+Name: "ignoreenv/heat"; Description: "Feu et flammes ignorÈs"; Types: full compact custom
+Name: "ignoreenv/gloom"; Description: "Mal des profondeurs ignorÈ (‡ changer)"; Types: full compact custom
+Name: "ignoreenv/slow"; Description: "Ralentissement et paralysie ignorÈs"; Types: full compact custom
+Name: "ignoreenv/termometer"; Description: "ThermomËtre toujours tempÈrÈ"; Types: full compact custom
 
 //INFINITE//
-Name: "infinite"; Description: "Vers l'infini et au-del√†!!!"; Types: custom; Flags: fixed
+Name: "infinite"; Description: "Vers l'infini et au-del‡!!!"; Types: custom; Flags: fixed
 
-Name: "infinite/arrow"; Description: "Fl√®ches infinies"; Types: custom
+Name: "infinite/arrow"; Description: "FlËches infinies"; Types: custom
 Name: "infinite/battery"; Description: "Batteries infinies"; Types: custom
-Name: "infinite/Durability"; Description: "Durabilit√© infinie"; Types: custom
+Name: "infinite/Durability"; Description: "DurabilitÈ infinie"; Types: custom
 Name: "infinite/buff"; Description: "Bonus de nourriture infini"; Types: custom
-Name: "infinite/food"; Description: "Nourriture infinie (√† tester)"; Types: custom
+Name: "infinite/food"; Description: "Nourriture infinie (‡ tester)"; Types: custom
 Name: "infinite/health"; Description: "Coeurs infinis"; Types: custom
 Name: "infinite/zonai"; Description: "Matos et appareils Zonai infinis"; Types: custom
 Name: "infinite/stamina"; Description: "Endurance infinie (ne fonctionne que pour la quete de la Master Sword)";
 Name: "infinite/horse"; Description: "Endurance des chevaux infinie"; Types: custom
-Name: "infinite/zonaiduration"; Description: "Temps d'activit√© des appareils Zonai infini"; Types: custom
-Name: "infinite/zonaidevice"; Description: "Appareils Zonai infinis (√† tester, doublon?)"; Types: custom
+Name: "infinite/zonaiduration"; Description: "Temps d'activitÈ des appareils Zonai infini"; Types: custom
+Name: "infinite/zonaidevice"; Description: "Appareils Zonai infinis (‡ tester, doublon?)"; Types: custom
 
 //INVINCIBLE//
-Name: "invincible"; Description: "Pour compenser ta petite z√©zette (respect aux petits nibards par contre)"; Types: custom; Flags: fixed
+Name: "invincible"; Description: "Pour compenser ta petite zÈzette (respect aux petits nibards par contre)"; Types: custom; Flags: fixed
 
-Name: "invincible/nohit"; Description: "D√©gats des coups re√ßus ignor√©s"; Types: custom
-Name: "invincible/nofalldamage"; Description: "D√©gats de chutes ignor√©s"; Types: custom
+Name: "invincible/nohit"; Description: "DÈgats des coups reÁus ignorÈs"; Types: custom
+Name: "invincible/nofalldamage"; Description: "DÈgats de chutes ignorÈs"; Types: custom
 Name: "invincible/godmode"; Description: "GODMODE MODAFUKA!"; Types: custom
 
 //LOCATION//
@@ -83,31 +86,31 @@ Name: "location/korogu"; Description: "Affiche tous les emplacements des Korogu 
 Name: "location/shrines"; Description: "Affiche tous les emplacements des Sanctuaires"; Types: custom
 
 //SPEEDMOD//
-Name: "speedmod"; Description: "Si tu n'as pas le temps d'appr√©cier le jeu, et pr√©f√®res te g√¢cher le jeu en vitesse"; Types: custom; Flags: fixed
+Name: "speedmod"; Description: "Si tu n'as pas le temps d'apprÈcier le jeu, et prÈfËres te g‚cher le jeu en vitesse"; Types: custom; Flags: fixed
 
-Name: "speedmod/climb"; Description: "Vitesse d'esclade augment√©e x2"; Types: custom
-Name: "speedmod/dive"; Description: "Vitesse de plong√©e augment√©e"; Types: custom
-Name: "speedmod/bowcharge"; Description: "Vitesse de bandage de l'arc augment√©e"; Types: custom
-Name: "speedmod/weaponcharge"; Description: "Vitesse de charge des armes augment√©e"; Types: custom
-Name: "speedmod/glider"; Description: "Vitesse de planage dans le vide augment√©e x3 (maintenir A)"; Types: custom
-Name: "speedmod/botnocd"; Description: "Plus de cooldown sur les capacit√© des prodiges"; Types: custom
-Name: "speedmod/bowfire"; Description: "Vitesse de tir √† l'arc augment√©e"; Types: custom
-Name: "speedmod/swim"; Description: "Vitesse de nage augment√©e x3"; Types: custom
-Name: "speedmod/move"; Description: "Vitesse de d√©placement augment√©e"; Types: custom
+Name: "speedmod/climb"; Description: "Vitesse d'esclade augmentÈe x2"; Types: custom
+Name: "speedmod/dive"; Description: "Vitesse de plongÈe augmentÈe"; Types: custom
+Name: "speedmod/bowcharge"; Description: "Vitesse de bandage de l'arc augmentÈe"; Types: custom
+Name: "speedmod/weaponcharge"; Description: "Vitesse de charge des armes augmentÈe"; Types: custom
+Name: "speedmod/glider"; Description: "Vitesse de planage dans le vide augmentÈe x3 (maintenir A)"; Types: custom
+Name: "speedmod/botnocd"; Description: "Plus de cooldown sur les capacitÈ des prodiges"; Types: custom
+Name: "speedmod/bowfire"; Description: "Vitesse de tir ‡ l'arc augmentÈe"; Types: custom
+Name: "speedmod/swim"; Description: "Vitesse de nage augmentÈe x3"; Types: custom
 
+Name: "speedmod/move"; Description: "Vitesse de dÈplacement augmentÈe"; Types: custom
 Name: "speedmod/move/x1"; Description: "Vitesse x1"; Types: custom; Flags: exclusive
-Name: "speedmod/move/x1.5"; Description: "Vitesse x1.5"; Types: custom; Flags: exclusive
+Name: "speedmod/move/x15"; Description: "Vitesse x1.5"; Types: custom; Flags: exclusive
 Name: "speedmod/move/x2"; Description: "Vitesse x2"; Types: custom; Flags: exclusive
 Name: "speedmod/move/x3"; Description: "Vitesse x3"; Types: custom; Flags: exclusive
 
 //TIME CONTROL//
-Name: "timecontrol"; Description: "Modification du facteur temps de la journ√©e"; Types: custom; Flags: fixed
+Name: "timecontrol"; Description: "Modification du facteur temps de la journÈe"; Types: custom; Flags: fixed
 
-Name: "timecontrol/FFW"; Description: "Avance le temps de la journ√©e (ZL+R3 √† droite)"; Types: custom
-Name: "timecontrol/RW"; Description: "Recule le temps de la journ√©e (ZL+R3 √† gauche)"; Types: custom
-Name: "timecontrol/stop"; Description: "Stop le temps de la journ√©e (ZL+R3 √† gauche)"; Types: custom
-Name: "timecontrol/resume"; Description: "Reprend le temps de la journ√©e (ZL+R3 √† gauche)"; Types: custom
-Name: "timecontrol/duration"; Description: "D√©fini le temps r√©el que dure une journ√©e compl√®te dans le jeu"; Types: custom
+Name: "timecontrol/FFW"; Description: "Avance le temps de la journÈe (ZL+R3 ‡ droite)"; Types: custom
+Name: "timecontrol/RW"; Description: "Recule le temps de la journÈe (ZL+R3 ‡ gauche)"; Types: custom
+Name: "timecontrol/stop"; Description: "Stop le temps de la journÈe (ZL+R3 ‡ gauche)"; Types: custom
+Name: "timecontrol/resume"; Description: "Reprend le temps de la journÈe (ZL+R3 ‡ gauche)"; Types: custom
+Name: "timecontrol/duration"; Description: "DÈfini le temps rÈel que dure une journÈe complËte dans le jeu"; Types: custom
 Name: "timecontrol/duration/m3"; Description: "3 minutes"; Types: custom; Flags: exclusive
 Name: "timecontrol/duration/m6"; Description: "6 minutes"; Types: custom; Flags: exclusive
 Name: "timecontrol/duration/m12"; Description: "12 minutes"; Types: custom; Flags: exclusive
@@ -119,47 +122,89 @@ Name: "timecontrol/duration/h4"; Description: "4 heures"; Types: custom; Flags: 
 Name: "timecontrol/duration/h12"; Description: "12 heures"; Types: custom; Flags: exclusive
 Name: "timecontrol/duration/h24"; Description: "24 heures"; Types: custom; Flags: exclusive
 
-
 [Files]
-//MODS FP//
-Source: "S:\SANDBOX\Github\Code-Bobykit\framerate\30fps\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Framerate/30fps"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\framerate\60fps\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Framerate/60fps"; Flags: recursesubdirs
-
-//CONF//
-//extra low//
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\extralow\x1\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/exlow"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\extralow\mods\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "TonPC/exlow"; Flags: recursesubdirs
-//minimal//
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\low\x1\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/Minimal"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\low\mods\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "TonPC/Minimal"; Flags: recursesubdirs
-//recommand√É¬©//
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\medium\1008p\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/Recommande/reso/1008p"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\medium\2k\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/Recommande/reso/2k"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\medium\4k\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/Recommande/reso/4k"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\medium\mods\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "TonPC/Recommande"; Flags: recursesubdirs
-//optimal//
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\high\1008p\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/Optimal/reso/1008p"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\high\2k\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/Optimal/reso/2k"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\high\4k\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/Optimal/reso/4k"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\level\high\mods\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "TonPC/Optimal"; Flags: recursesubdirs
 //CONFORT//
-Source: "S:\SANDBOX\Github\Code-Bobykit\confort\NintendoUI\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/UI/switch"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\confort\SonyUI\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/UI/sony"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\confort\XboxUI\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/UI/xbox"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\confort\Camera sens\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/mouse"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\confort\disable target dof\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/noDOF"; Flags: recursesubdirs
-//CHEATS//
-Source: "S:\SANDBOX\Github\Code-Bobykit\Cheats\Amiibos\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "cheats/amiibos"; Flags: recursesubdirs
-//SYSTEM//
-Source: "S:\SANDBOX\Github\Code-Bobykit\ICON\icon64.ico"; DestDir: "{app}\yuzu-windows-msvc-early-access"; Flags: onlyifdoesntexist
-Source: "S:\SANDBOX\Github\Code-Bobykit\Yuzu\*.*"; DestDir: "{app}\"; Components: "system/yuzu"; Flags: onlyifdoesntexist recursesubdirs
-Source: "S:\SANDBOX\Github\Code-Bobykit\shader\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\shader\0100f2c0115b6000"; Components: "system/shader"; Flags: onlyifdoesntexist recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\confort\add60s\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\"; Components: "confort/add60s"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\confort\adhereclimp\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/adhereclimb"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\confort\durax10\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/durax10"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\confort\IgnReqUpgrade\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/ignrequpgrades"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\confort\item pickup\x2\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/itempickup/x2"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\confort\item pickup\x4\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/itempickup/x4"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\confort\item pickup\x8\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/itempickup/x8"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\confort\jumphigh\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/jumphigh"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\confort\nostam\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/nostamcharge"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\confort\moonjump\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/moonjump"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\confort\stealthon\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "confort/stealthON"; Flags: recursesubdirs
 
-[Icons]
-Name: "{userdesktop}\Bobykit YUZU"; Filename: "{app}\yuzu-windows-msvc-early-access\yuzu.exe"; WorkingDir: "{app}\yuzu-windows-msvc-early-access"; IconFilename: "{app}\yuzu-windows-msvc-early-access\icon64.ico"
-Name: "{userdesktop}\Update YUZU"; Filename: "{app}\maintenancetool.exe"; WorkingDir: "{app}"
-Name: "{userstartmenu}\Bobykit YUZU\Bobykit YUZU"; Filename: "{app}\yuzu-windows-msvc-early-access\yuzu.exe"; WorkingDir: "{app}\yuzu-windows-msvc-early-access"; IconFilename: "{app}\yuzu-windows-msvc-early-access\icon64.ico"
-Name: "{userstartmenu}\Bobykit YUZU\Update YUZU"; Filename: "{app}\maintenancetool.exe"; WorkingDir: "{app}"
+//DAMAGE//
+Source: "S:\SANDBOX\Github\pack-cheats\damage\x2\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Damage/damageX/x2"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\damage\x4\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Damage/damageX/x4"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\damage\x10\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Damage/damageX/x10"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\damage\x30\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Damage/damageX/x30"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\damage\MS Beam Up\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Damage/MSBeam"; Flags: recursesubdirs
+
+//DEFAULT MOVE//
+Source: "S:\SANDBOX\Github\pack-cheats\default move\Default is Running"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "defaultmove/run"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\default move\Default is Walking"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "defaultmove/walk"; Flags: recursesubdirs
+
+//EFFETS D'ENVIRONNEMENT IGNORE//
+Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\Ignore Cold & Freeze Effects"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/cold"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\Ignore Fire & Flame Effects"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/heat"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\Ignore Gloom Effects"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/gloom"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\Ignore Paralysis & Slow Effects"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/slow"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\Perfect Goldilocks Thermometer"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/termometer"; Flags: recursesubdirs
+
+//INFINITE//
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Arrows"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/arrow"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Battery"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/battery"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Durability"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/Durability"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Food Buff Timer"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/buff"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Food Items"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/food"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Health"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/health"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Materials & Zonai Devices"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/zonai"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Stamina"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/stamina"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Stamina Horse"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/horse"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Zonai Device Duration"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/zonaiduration"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Zonai Devices"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Infinite Zonai Devices"; Flags: recursesubdirs
+
+//INVINCIBLE//
+Source: "S:\SANDBOX\Github\pack-cheats\invincible\Godmode"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "invincible/godmode"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\invincible\Invincible (Ignore Hits)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "invincible/nohit"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\invincible\No Fall Damage"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "invincible/nofalldamage"; Flags: recursesubdirs
+
+//LOCATION//
+Source: "S:\SANDBOX\Github\pack-cheats\Show all location\korogu (Zoom In)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "location/korogu"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Show all location\shrines"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "location/shrines"; Flags: recursesubdirs
+
+//SPEEDMOD//
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Climbing Speed (2x)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/climb"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Dive Boost"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/dive"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Faster Bow Charge"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/bowcharge"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Faster Weapon Charge"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/weaponcharge"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Glider Speed (3x) (Hold A)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/glider"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Instant Companion Skills"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/botnocd"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\1"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x1"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\1.5"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x15"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\2"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x2"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\3"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x3"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Quickfire Bow"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/bowfire"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Swimming Speed (3x)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/swim"; Flags: recursesubdirs
+
+//TIME CONTROL//
+Source: "S:\SANDBOX\Github\pack-cheats\time control\Time Fast-Forward (ZL+R3Left)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/FFW"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\Time Resume (ZL+R3Up)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/resume"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\Time Rewind (ZL+R3Left)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/RW"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\Time Stop (ZL+R3Down)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/stop"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m3"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m3"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m6"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m6"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m12"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m12"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m36"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m36"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m48"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m48"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m60"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m60"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\h2"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h2"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\h4"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h4"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\h12"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h12"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\h24"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h24"; Flags: recursesubdirs
 
 [Code]
 var
@@ -221,100 +266,6 @@ begin
   Button2.Height := WizardForm.NextButton.Height;
   Button2.Caption := 'Cha√Æne YT';
   Button2.OnClick := @Button2Click;
-end;
-
-procedure CurStepChanged(CurStep: TSetupStep);
-var
-  FilesToDelete: string;
-
-begin
-  if CurStep = ssInstall then
-  begin
-    if IsComponentSelected('Framerate/30fps') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\60FPS');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-    if IsComponentSelected('Framerate/60fps') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\30FPS');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-    if IsComponentSelected('TonPC/exlow') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-    if IsComponentSelected('TonPC/Minimal') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-    if IsComponentSelected('TonPC/Recommande') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-    if IsComponentSelected('TonPC/Optimal') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-    if IsComponentSelected('confort/UI/switch') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\ps5');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\xbox');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-    if IsComponentSelected('confort/UI/sony') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\blackscreenfix');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\xbox');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-    if IsComponentSelected('confort/UI/xbox') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\blackscreenfix');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\ps5');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-    if not IsComponentSelected('confort/mouse') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\camera');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-    if not IsComponentSelected('cheats/amiibos') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\NoLootBoxes');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-    if not IsComponentSelected('system/shader') then
-    begin
-      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\shader\0100f2c0115b6000');
-      if DirExists(FilesToDelete) then
-        DelTree(FilesToDelete, True, True, True);
-    end;
-  end;
 end;
 
 function NextButtonClick(CurPageID: Integer): Boolean;
