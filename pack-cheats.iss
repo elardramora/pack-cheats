@@ -121,7 +121,7 @@ Name: "timecontrol/duration/h24"; Description: "24 heures"; Types: custom; Flags
 
 
 [Files]
-//MODS FPS//
+//MODS FP//
 Source: "S:\SANDBOX\Github\Code-Bobykit\framerate\30fps\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Framerate/30fps"; Flags: recursesubdirs
 Source: "S:\SANDBOX\Github\Code-Bobykit\framerate\60fps\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Framerate/60fps"; Flags: recursesubdirs
 
