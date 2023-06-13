@@ -1,14 +1,13 @@
 [Setup]
 AppName=Bobykit de survie YUZU
-AppVersion=1.97.112.3655
+AppVersion=1.100.112.3655
 DefaultDirName={localappdata}\Bobykit YUZU
-SourceDir=S:\SANDBOX\Github\Code-Bobykit\
-DiskSpanning=yes
+SourceDir=S:\SANDBOX\Github\pack-cheats\
 DisableProgramGroupPage=yes
-WizardImageFile=S:\SANDBOX\Github\Code-Bobykit\GRAPHICS\rec4.bmp
-WizardSmallImageFile=S:\SANDBOX\Github\Code-Bobykit\GRAPHICS\rec3.bmp
-SetupIconFile=S:\SANDBOX\Github\Code-Bobykit\ICON\icon64.ico
-OutputBaseFilename=Bobykit de survie YUZU
+WizardImageFile=S:\SANDBOX\Github\pack-cheats\GRAPHICS\rec4.bmp
+WizardSmallImageFile=S:\SANDBOX\Github\pack-cheats\GRAPHICS\rec3.bmp
+SetupIconFile=S:\SANDBOX\Github\pack-cheats\ICON\icon64.ico
+OutputBaseFilename=Bobypack de triche
 DisableWelcomePage=no
 
 
@@ -24,38 +23,38 @@ Name: "Framerate/60fps"; Description: "60fps dynamique"; Types: custom; Flags: e
 //CONF//
 Name: "TonPC"; Description: "Choisis le type de PC que tu as (n'aie pas honte, je suis le seul qui te juge en ce moment)"; Types: full compact custom; Flags: fixed
 //extra low//
-Name: "TonPC/exlow"; Description: "Une plaque en braille. Je veux jouer en 540p à  3fps, je suis aveugle. (mais je déconne pas avec les musiques!)"; Types: custom; Flags: exclusive
+Name: "TonPC/exlow"; Description: "Une plaque en braille. Je veux jouer en 540p Ã Â  3fps, je suis aveugle. (mais je dÃ©conne pas avec les musiques!)"; Types: custom; Flags: exclusive
 //minimal//
-Name: "TonPC/Minimal"; Description: "Un minitel. ''Experience de merde, experience quand même'', j'ai appris ça à  la scatinière! "; Types: custom; Flags: exclusive
-//recomandÃ©//
+Name: "TonPC/Minimal"; Description: "Un minitel. ''Experience de merde, experience quand mÃªme'', j'ai appris Ã§a Ã Â  la scatiniÃ¨re! "; Types: custom; Flags: exclusive
+//recomandÃƒÂ©//
 Name: "TonPC/Recommande"; Description: "Le minimum requis, pourquoi ma vie est-elle si fade?"; Types: custom; Flags: exclusive
-Name: "TonPC/Recommande/reso"; Description: "Ta résolution d'écran:"; Types: full compact custom; 
-Name: "TonPC/Recommande/reso/1008p"; Description: "1008p (Et non c'est pas une erreur, et ça sera plus beau que le 1080p natif)"; Types: custom; Flags: exclusive
+Name: "TonPC/Recommande/reso"; Description: "Ta rÃ©solution d'Ã©cran:"; Types: full compact custom; 
+Name: "TonPC/Recommande/reso/1008p"; Description: "1008p (Et non c'est pas une erreur, et Ã§a sera plus beau que le 1080p natif)"; Types: custom; Flags: exclusive
 Name: "TonPC/Recommande/reso/2k"; Description: "2k"; Types: custom; Flags: exclusive
 Name: "TonPC/Recommande/reso/4k"; Description: "4k"; Types: custom; Flags: exclusive
 //optimal//
 Name: "TonPC/Optimal"; Description: "Le Rocco Siffredi des PC, les daronnes se cachent quand elles le voient"; Types: custom; Flags: exclusive
-Name: "TonPC/Optimal/reso"; Description: "Ta résolution d'écran:"; Types: full compact custom; 
+Name: "TonPC/Optimal/reso"; Description: "Ta rÃ©solution d'Ã©cran:"; Types: full compact custom; 
 Name: "TonPC/Optimal/reso/1008p"; Description: "1008p (toujours pas une erreur, faut suivre Boby)"; Types: custom; Flags: exclusive
 Name: "TonPC/Optimal/reso/2k"; Description: "2k"; Types: custom; Flags: exclusive
 Name: "TonPC/Optimal/reso/4k"; Description: "4k"; Types: custom; Flags: exclusive
 
 //CONFORT//
 Name: "confort"; Description: "Pour ton petit confort d'occidental"; Types: full compact custom; Flags: fixed
-Name: "confort/UI"; Description: "Ton style d'interface utilisateur préféré"; Types: full compact custom; Flags: fixed
+Name: "confort/UI"; Description: "Ton style d'interface utilisateur prÃ©fÃ©rÃ©"; Types: full compact custom; Flags: fixed
 Name: "confort/UI/switch"; Description: "Nintendo Switch"; Types: custom; Flags: exclusive
 Name: "confort/UI/sony"; Description: "Sony Playstation"; Types: custom; Flags: exclusive
 Name: "confort/UI/xbox"; Description: "Microsoft Xboite"; Types: custom; Flags: exclusive
-Name: "confort/mouse"; Description: "Sensibilité de caméra augmentée"; 
-Name: "confort/noDOF"; Description: "Désactivation du flou de ciblage"; 
+Name: "confort/mouse"; Description: "SensibilitÃ© de camÃ©ra augmentÃ©e"; 
+Name: "confort/noDOF"; Description: "DÃ©sactivation du flou de ciblage"; 
 
 //CHEATS//
 Name: "cheats"; Description: "Les cheats de fillettes"; Types: full compact custom; Flags: fixed
-Name: "cheats/amiibos"; Description: "Amiibos illimités et table de loot 100% (parce que même sans ça c'est aussi chiant pour les vrais hommes...)"; Types: full compact custom;
+Name: "cheats/amiibos"; Description: "Amiibos illimitÃ©s et table de loot 100% (parce que mÃªme sans Ã§a c'est aussi chiant pour les vrais hommes...)"; Types: full compact custom;
 
 //SYSTEM//
-Name: "system"; Description: "Fichiers système"; Types: full compact custom; Flags: fixed
-Name: "system/shader"; Description: "Pack de 30k Shader cache (mets à jour tes drivers graphique!!!)"; Types: full compact custom
+Name: "system"; Description: "Fichiers systÃ¨me"; Types: full compact custom; Flags: fixed
+Name: "system/shader"; Description: "Pack de 30k Shader cache (mets Ã Â jour tes drivers graphique!!!)"; Types: full compact custom
 Name: "system/yuzu"; Description: "Yuzu...accessoirement"; Types: full compact custom; Flags: fixed
 
 [Files]
@@ -70,7 +69,7 @@ Source: "S:\SANDBOX\Github\Code-Bobykit\level\extralow\mods\*.*"; DestDir: "{app
 //minimal//
 Source: "S:\SANDBOX\Github\Code-Bobykit\level\low\x1\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/Minimal"; Flags: recursesubdirs
 Source: "S:\SANDBOX\Github\Code-Bobykit\level\low\mods\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "TonPC/Minimal"; Flags: recursesubdirs
-//recommandÃ©//
+//recommandÃƒÂ©//
 Source: "S:\SANDBOX\Github\Code-Bobykit\level\medium\1008p\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/Recommande/reso/1008p"; Flags: recursesubdirs
 Source: "S:\SANDBOX\Github\Code-Bobykit\level\medium\2k\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/Recommande/reso/2k"; Flags: recursesubdirs
 Source: "S:\SANDBOX\Github\Code-Bobykit\level\medium\4k\0100F2C0115B6000.ini"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\config\custom"; Components: "TonPC/Recommande/reso/4k"; Flags: recursesubdirs
@@ -157,7 +156,7 @@ begin
   Button2.Top := WizardForm.NextButton.Top;
   Button2.Width := WizardForm.NextButton.Width;
   Button2.Height := WizardForm.NextButton.Height;
-  Button2.Caption := 'Chaîne YT';
+  Button2.Caption := 'ChaÃ®ne YT';
   Button2.OnClick := @Button2Click;
 end;
 
