@@ -1,6 +1,6 @@
 [Setup]
 AppName=Bobykit de survie YUZU
-AppVersion=1.100.112.3655
+AppVersion=1.100.112.3674
 DefaultDirName={localappdata}\Bobykit YUZU
 SourceDir=S:\SANDBOX\Github\pack-cheats\
 DisableProgramGroupPage=yes
