@@ -144,8 +144,8 @@ Source: "S:\SANDBOX\Github\pack-cheats\damage\x30\*.*"; DestDir: "{app}\yuzu-win
 Source: "S:\SANDBOX\Github\pack-cheats\damage\MS Beam Up\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Damage/MSBeam"; Flags: recursesubdirs
 
 //DEFAULT MOVE//
-Source: "S:\SANDBOX\Github\pack-cheats\default move\run\Default is Running\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "defaultmove/run"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\default move\walk\Default is Walking\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "defaultmove/walk"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\default move\run\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "defaultmove/run"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\default move\walk\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "defaultmove/walk"; Flags: recursesubdirs
 
 //EFFETS D'ENVIRONNEMENT IGNORE//
 Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\cold\Ignore Cold & Freeze Effects\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/cold"; Flags: recursesubdirs
