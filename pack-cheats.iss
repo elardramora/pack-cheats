@@ -46,7 +46,7 @@ Name: "Damage/MSBeam"; Description: "Le rayon des la Master Sword augmenté"; Typ
 Name: "defaultmove"; Description: "Mouvement de Link par défaut"; Types: full compact custom; Flags: fixed
 
 Name: "defaultmove/run"; Description: "Courir par défaut"; Types: full compact custom; Flags: exclusive
-Name: "defaultmove/walk"; Description: "Marcher par défaut"; Types: full compact custom; Flags: exclusive
+Name: "defaultmove/walk"; Description: "Marcher par défaut (laisser celui-ci par défaut)"; Types: full compact custom; Flags: exclusive
 
 //EFFETS D'ENVIRONNEMENT IGNORE//
 Name: "ignoreenv"; Description: "Les effets négatifs de l'environnement sont ignorés. Cheats ''Climatosceptiques ready''"; Types: full compact custom; Flags: fixed
@@ -77,7 +77,7 @@ Name: "invincible"; Description: "Pour compenser ta petite zézette (respect aux 
 
 Name: "invincible/nohit"; Description: "Dégats des coups reçus ignorés"; Types: custom
 Name: "invincible/nofalldamage"; Description: "Dégats de chutes ignorés"; Types: custom
-Name: "invincible/godmode"; Description: "GODMODE MODAFUKA!"; Types: custom
+Name: "invincible/godmode"; Description: "GODMODE MODAFUKA! (a tester)"; Types: custom
 
 //LOCATION//
 Name: "location"; Description: "Pratique quand on n'aime pas se sortir les doigts du cul"; Types: custom; Flags: fixed
@@ -225,6 +225,857 @@ end;
 procedure Button2Click(Sender: TObject);
 begin
   OpenBrowser('https://www.youtube.com/channel/UC3siKVVCA-fgufejlR5oF-Q/?sub_confirmation=1');
+end;
+
+procedure CurStepChanged(CurStep: TSetupStep);
+var
+  FilesToDelete: string;
+
+begin
+  if CurStep = ssInstall then
+  begin
+    if IsComponentSelected('confort/itempickup/x2') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\x4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\x8');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('confort/itempickup/x4') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\x2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\x8');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('confort/itempickup/x8') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\x4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\x2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    ///////////////////////////
+    if IsComponentSelected('Damage/damageX/x2') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (4x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (10x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (30x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+     if IsComponentSelected('Damage/damageX/x2') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (4x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (10x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (30x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('Damage/damageX/x4') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (2x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (10x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (30x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+     if IsComponentSelected('Damage/damageX/x10') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (4x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (2x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (30x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+     if IsComponentSelected('Damage/damageX/x30') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (4x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (10x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Damage (2x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    //////////////
+    if IsComponentSelected('defaultmove/run') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Default is Walking');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('defaultmove/walk') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Default is Running');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    ////////////////
+     if IsComponentSelected('speedmod/move/x1') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\1.5');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('speedmod/move/x15') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\1');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('speedmod/move/x2') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\1');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\1.5');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('speedmod/move/x3') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\1');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\1.5');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    //////////////////////////////////////////
+    if IsComponentSelected('timecontrol/duration/m3') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m6');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m36');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m48');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m60');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h24');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('timecontrol/duration/m6') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m36');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m48');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m60');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h24');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('timecontrol/duration/m12') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m6');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m36');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m48');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m60');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h24');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('timecontrol/duration/m36') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m6');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m48');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m60');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h24');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('timecontrol/duration/m48') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m6');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m36');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m60');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h24');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('timecontrol/duration/m60') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m6');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m36');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m48');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h24');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('timecontrol/duration/h2') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m6');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m36');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m48');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m60');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h24');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('timecontrol/duration/h4') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m6');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m36');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m48');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m60');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h24');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('timecontrol/duration/h12') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m6');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m36');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m48');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m60');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h24');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if IsComponentSelected('timecontrol/duration/h12') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m6');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m36');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m48');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m60');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h24');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;if IsComponentSelected('timecontrol/duration/h24') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m3');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m6');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m36');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m48');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\m60');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h2');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h4');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\h12');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    //////////////////////////////////
+    if not IsComponentSelected('confort/add60s') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Add 60s (L3+R3)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('confort/adhereclimb') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Adhere While Climbing');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('confort/durax10') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Durability x10');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('confort/moonjump') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Hold (X) Moon Jump');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('confort/ignrequpgrades') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Ignore Requirements for Upgrades');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('confort/jumphigh') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Jump Higher');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('confort/nostamcharge') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\NoStam Cost Weapon Charge');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('confort/stealthON') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Stealth Mode Always On');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('Damage/MSBeam') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\MS Beam Upgrade');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('ignoreenv/cold') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Ignore Cold & Freeze Effects');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('ignoreenv/heat') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Ignore Fire & Flame Effects');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('ignoreenv/gloom') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Ignore Gloom Effects');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;if not IsComponentSelected('ignoreenv/slow') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Ignore Paralysis & Slow Effects');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('ignoreenv/termometer') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Perfect Goldilocks Thermometer');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('infinite/arrow') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Infinite Arrows');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('infinite/battery') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Infinite Battery');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('infinite/Durability') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Infinite Durability');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('infinite/buff') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Infinite Food Buff Timer');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('infinite/food') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Infinite Food Items');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('infinite/health') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Infinite Health');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('infinite/zonai') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Infinite Materials & Zonai Devices');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('infinite/stamina') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Infinite Stamina');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('infinite/horse') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Infinite Stamina Horse');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('infinite/zonaiduration') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Infinite Zonai Device Duration');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('infinite/zonaidevice') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Infinite Zonai Devices');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('invincible/nohit') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Invincible (Ignore Hits)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('invincible/nofalldamage') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\No Fall Damage');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('invincible/godmode') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Godmode');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('location/korogu') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\korogu (Zoom In)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('location/shrines') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\shrines');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('speedmod/climb') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Climbing Speed (2x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('speedmod/dive') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Dive Boost');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('speedmod/bowcharge') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Faster Bow Charge');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('speedmod/weaponcharge') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Faster Weapon Charge');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('speedmod/glider') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Glider Speed (3x) (Hold A)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('speedmod/botnocd') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Instant Companion Skills');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('speedmod/bowfire') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Quickfire Bow');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('speedmod/swim') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Swimming Speed (3x)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('timecontrol/FFW') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Time Fast-Forward (ZL+R3Left)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('timecontrol/RW') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Time Rewind (ZL+R3Left)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('timecontrol/stop') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Time Stop (ZL+R3Down)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+    if not IsComponentSelected('timecontrol/resume') then
+    begin
+      FilesToDelete := ExpandConstant('{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000\Time Resume (ZL+R3Up)');
+      if DirExists(FilesToDelete) then
+        DelTree(FilesToDelete, True, True, True);
+    end;
+  end;
 end;
 
 procedure InitializeWizard;
