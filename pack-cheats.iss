@@ -88,7 +88,7 @@ Name: "location/shrines"; Description: "Affiche tous les emplacements des Sanctu
 //SPEEDMOD//
 Name: "speedmod"; Description: "Si tu n'as pas le temps d'apprécier le jeu, et préfères te gâcher le jeu en vitesse"; Types: custom; Flags: fixed
 
-Name: "speedmod/climb"; Description: "Vitesse d'esclade augmentée x2"; Types: custom
+Name: "speedmod/climb"; Description: "Vitesse d'escalade augmentée x2"; Types: custom
 Name: "speedmod/dive"; Description: "Vitesse de plongée augmentée"; Types: custom
 Name: "speedmod/bowcharge"; Description: "Vitesse de bandage de l'arc augmentée"; Types: custom
 Name: "speedmod/weaponcharge"; Description: "Vitesse de charge des armes augmentée"; Types: custom
