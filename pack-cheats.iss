@@ -20,7 +20,7 @@ Name: "confort"; Description: "Entre confort et assistanat, il n'y a qu'un pas!"
 
 Name: "confort/add60s"; Description: "Ajoute 60 secondes supplémentaires pour les missions chronométrées (L3+R3)"; Types: custom
 Name: "confort/adhereclimb"; Description: "Plus de glisse lors de l'escalade."; Types: custom
-Name: "confort/durax10"; Description: "Durabilité des armes augmentée x10."; Types: custom
+Name: "confort/durax10"; Description: "Durabilité des armes augmentée x10. (Ne pas utiliser avec un autre cheat qui touche aux armes)"; Types: custom
 Name: "confort/moonjump"; Description: "...Saute comme sur la lune (omg...maintenir X)"; Types: custom
 Name: "confort/ignrequpgrades"; Description: "Compos requises pour upgrader le stuff ignorées"; Types: custom
 Name: "confort/itempickup"; Description: "Item pickup (à tester)"; Types: custom
@@ -97,7 +97,7 @@ Name: "speedmod/botnocd"; Description: "Plus de cooldown sur les capacité des pr
 Name: "speedmod/bowfire"; Description: "Vitesse de tir à l'arc augmentée"; Types: custom
 Name: "speedmod/swim"; Description: "Vitesse de nage augmentée x3"; Types: custom
 
-Name: "speedmod/move"; Description: "Vitesse de déplacement augmentée"; Types: custom
+Name: "speedmod/move"; Description: "Vitesse de déplacement augmentée (casse le temps de jeu)"; Types: custom
 Name: "speedmod/move/x1"; Description: "Vitesse x1"; Types: custom; Flags: exclusive
 Name: "speedmod/move/x15"; Description: "Vitesse x1.5"; Types: custom; Flags: exclusive
 Name: "speedmod/move/x2"; Description: "Vitesse x2"; Types: custom; Flags: exclusive
