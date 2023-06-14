@@ -18,15 +18,15 @@ Name: "french"; MessagesFile: "compiler:Languages\French.isl"
 //CONFORT//
 Name: "confort"; Description: "Entre confort et assistanat, il n'y a qu'un pas!"; Types: full compact custom; Flags: fixed
 
-Name: "confort/add60s"; Description: "60 secondes en plus pour les missions chronométrées (L3+R3)"; Types: custom
-Name: "confort/adhereclimb"; Description: "Ne glisse plus lors de l'escalade."; Types: custom
+Name: "confort/add60s"; Description: "Ajoute 60 secondes supplémentaires pour les missions chronométrées (L3+R3)"; Types: custom
+Name: "confort/adhereclimb"; Description: "Plus de glisse lors de l'escalade."; Types: custom
 Name: "confort/durax10"; Description: "Durabilité des armes augmentée x10."; Types: custom
-Name: "confort/moonjump"; Description: "...saute comme sur la lune (omg...maintenir X)"; Types: custom
+Name: "confort/moonjump"; Description: "...Saute comme sur la lune (omg...maintenir X)"; Types: custom
 Name: "confort/ignrequpgrades"; Description: "Compos requises pour upgrader le stuff ignorées"; Types: custom
 Name: "confort/itempickup"; Description: "Item pickup (à tester)"; Types: custom
-Name: "confort/itempickup/x2"; Description: "Item pickup (à tester)"; Types: custom
-Name: "confort/itempickup/x4"; Description: "Item pickup (à tester)"; Types: custom
-Name: "confort/itempickup/x8"; Description: "Item pickup (à tester)"; Types: custom
+Name: "confort/itempickup/x2"; Description: "Item pickup x2 (à tester)"; Types: custom; Flags: exclusive
+Name: "confort/itempickup/x4"; Description: "Item pickup x4 (à tester)"; Types: custom; Flags: exclusive
+Name: "confort/itempickup/x8"; Description: "Item pickup x8 (à tester)"; Types: custom; Flags: exclusive
 Name: "confort/jumphigh"; Description: "hauteur de saut augmentée"; Types: custom
 Name: "confort/nostamcharge"; Description: "Endurance des coups chargés ignorée"; Types: custom
 Name: "confort/stealthON"; Description: "Mode furtif toujours activé"; Types: custom
@@ -51,11 +51,11 @@ Name: "defaultmove/walk"; Description: "Marcher par défaut"; Types: full compact
 //EFFETS D'ENVIRONNEMENT IGNORE//
 Name: "ignoreenv"; Description: "Les effets négatifs de l'environnement sont ignorés. Cheats ''Climatosceptiques ready''"; Types: full compact custom; Flags: fixed
 
-Name: "ignoreenv/cold"; Description: "Froid et gèle ignorés"; Types: full compact custom
-Name: "ignoreenv/heat"; Description: "Feu et flammes ignorés"; Types: full compact custom
-Name: "ignoreenv/gloom"; Description: "Mal des profondeurs ignoré (à changer)"; Types: full compact custom
-Name: "ignoreenv/slow"; Description: "Ralentissement et paralysie ignorés"; Types: full compact custom
-Name: "ignoreenv/termometer"; Description: "Thermomètre toujours tempéré"; Types: full compact custom
+Name: "ignoreenv/cold"; Description: "Froid et gèle ignorés"; Types: custom
+Name: "ignoreenv/heat"; Description: "Feu et flammes ignorés"; Types: custom
+Name: "ignoreenv/gloom"; Description: "Mal des profondeurs ignoré (à changer)"; Types: custom
+Name: "ignoreenv/slow"; Description: "Ralentissement et paralysie ignorés"; Types: custom
+Name: "ignoreenv/termometer"; Description: "Thermomètre toujours tempéré"; Types: custom
 
 //INFINITE//
 Name: "infinite"; Description: "Vers l'infini et au-delà!!!"; Types: custom; Flags: fixed
@@ -144,67 +144,67 @@ Source: "S:\SANDBOX\Github\pack-cheats\damage\x30\*.*"; DestDir: "{app}\yuzu-win
 Source: "S:\SANDBOX\Github\pack-cheats\damage\MS Beam Up\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Damage/MSBeam"; Flags: recursesubdirs
 
 //DEFAULT MOVE//
-Source: "S:\SANDBOX\Github\pack-cheats\default move\Default is Running"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "defaultmove/run"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\default move\Default is Walking"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "defaultmove/walk"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\default move\run\Default is Running\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "defaultmove/run"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\default move\walk\Default is Walking\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "defaultmove/walk"; Flags: recursesubdirs
 
 //EFFETS D'ENVIRONNEMENT IGNORE//
-Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\Ignore Cold & Freeze Effects"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/cold"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\Ignore Fire & Flame Effects"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/heat"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\Ignore Gloom Effects"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/gloom"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\Ignore Paralysis & Slow Effects"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/slow"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\Perfect Goldilocks Thermometer"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/termometer"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\cold\Ignore Cold & Freeze Effects\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/cold"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\fire\Ignore Fire & Flame Effects\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/heat"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\gloom\Ignore Gloom Effects\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/gloom"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\slow\Ignore Paralysis & Slow Effects\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/slow"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Ignore env effects\thermo\Perfect Goldilocks Thermometer\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "ignoreenv/termometer"; Flags: recursesubdirs
 
 //INFINITE//
-Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Arrows"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/arrow"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Battery"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/battery"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Durability"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/Durability"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Food Buff Timer"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/buff"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Food Items"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/food"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Health"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/health"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Materials & Zonai Devices"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/zonai"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Stamina"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/stamina"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Stamina Horse"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/horse"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Zonai Device Duration"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/zonaiduration"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Infinite\Infinite Zonai Devices"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "Infinite Zonai Devices"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\arrow\Infinite Arrows\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/arrow"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\battery\Infinite Battery\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/battery"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\dura\Infinite Durability\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/Durability"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\buff\Infinite Food Buff Timer\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/buff"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\food\Infinite Food Items\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/food"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\health\Infinite Health\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/health"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\matzonai\Infinite Materials & Zonai Devices\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/zonai"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\stam\Infinite Stamina\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/stamina"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\horse\Infinite Stamina Horse\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/horse"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\zonaidura\Infinite Zonai Device Duration\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/zonaiduration"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Infinite\zonaidev\Infinite Zonai Devices\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "infinite/zonaidevice"; Flags: recursesubdirs
 
 //INVINCIBLE//
-Source: "S:\SANDBOX\Github\pack-cheats\invincible\Godmode"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "invincible/godmode"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\invincible\Invincible (Ignore Hits)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "invincible/nohit"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\invincible\No Fall Damage"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "invincible/nofalldamage"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\invincible\god\Godmode\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "invincible/godmode"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\invincible\nohit\Invincible (Ignore Hits)\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "invincible/nohit"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\invincible\fall\No Fall Damage\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "invincible/nofalldamage"; Flags: recursesubdirs
 
 //LOCATION//
-Source: "S:\SANDBOX\Github\pack-cheats\Show all location\korogu (Zoom In)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "location/korogu"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Show all location\shrines"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "location/shrines"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Show all location\korogu\korogu (Zoom In)\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "location/korogu"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Show all location\sanctu\shrines\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "location/shrines"; Flags: recursesubdirs
 
 //SPEEDMOD//
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Climbing Speed (2x)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/climb"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Dive Boost"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/dive"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Faster Bow Charge"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/bowcharge"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Faster Weapon Charge"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/weaponcharge"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Glider Speed (3x) (Hold A)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/glider"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Instant Companion Skills"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/botnocd"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\1"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x1"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\1.5"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x15"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\2"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x2"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\3"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x3"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Quickfire Bow"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/bowfire"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\Swimming Speed (3x)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/swim"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\climb\Climbing Speed (2x)\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/climb"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\dive\Dive Boost\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/dive"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\bow\Faster Bow Charge\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/bowcharge"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\weapon\Faster Weapon Charge\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/weaponcharge"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\glide\Glider Speed (3x) (Hold A)\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/glider"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\botnocd\Instant Companion Skills\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/botnocd"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\x1\1\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x1"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\x1.5\1.5\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x15"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\x2\2\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x2"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\move speed\x3\3\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/move/x3"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\bow2\Quickfire Bow\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/bowfire"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\Speedmod\swim\Swimming Speed (3x)\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "speedmod/swim"; Flags: recursesubdirs
 
 //TIME CONTROL//
-Source: "S:\SANDBOX\Github\pack-cheats\time control\Time Fast-Forward (ZL+R3Left)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/FFW"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\Time Resume (ZL+R3Up)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/resume"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\Time Rewind (ZL+R3Left)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/RW"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\Time Stop (ZL+R3Down)"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/stop"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m3"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m3"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m6"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m6"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m12"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m12"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m36"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m36"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m48"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m48"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\m60"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m60"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\h2"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h2"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\h4"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h4"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\h12"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h12"; Flags: recursesubdirs
-Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\h24"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h24"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\ff\Time Fast-Forward (ZL+R3Left)\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/FFW"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\resume\Time Resume (ZL+R3Up)\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/resume"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\rw\Time Rewind (ZL+R3Left)\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/RW"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\stop\Time Stop (ZL+R3Down)\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/stop"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\3\m3\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m3"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\6\m6\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m6"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\12m\m12\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m12"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\36\m36\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m36"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\48\m48\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m48"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\60\m60\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/m60"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\2\h2\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h2"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\4\h4\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h4"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\12\h12\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h12"; Flags: recursesubdirs
+Source: "S:\SANDBOX\Github\pack-cheats\time control\time of day\24\h24\*.*"; DestDir: "{app}\yuzu-windows-msvc-early-access\user\load\0100F2C0115B6000"; Components: "timecontrol/duration/h24"; Flags: recursesubdirs
 
 [Code]
 var
@@ -264,7 +264,7 @@ begin
   Button2.Top := WizardForm.NextButton.Top;
   Button2.Width := WizardForm.NextButton.Width;
   Button2.Height := WizardForm.NextButton.Height;
-  Button2.Caption := 'ChaÃ®ne YT';
+  Button2.Caption := 'Chaîne YT';
   Button2.OnClick := @Button2Click;
 end;
 
