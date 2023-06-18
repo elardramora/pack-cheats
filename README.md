@@ -8,11 +8,11 @@
 - [ ] Inf. Health
 - [ ] Inf. Stamina
 - [ ] Inf. Stamina (Use Only For Master Sword Quest)
-- [ ] Inf. Battery
+- [x] Inf. Battery. OK (@redpandachannel7981)
 - [ ] Inf. Horse Stamina
 - [ ] Stealth Mode
 - [ ] Ignore Fall Damage & Reaction
-- [ ] Perfect Goldilocks Thermometer (No Hot or Cold)
+- [x] OK Perfect Goldilocks Thermometer (No Hot or Cold)
 - [ ] Ignore Gloom Effects
 - [ ] Ignore Paralysis & Slow Effects
 - [ ] Ignore Cold & Freeze Effects
@@ -43,7 +43,7 @@
 - [ ] Inf. Equipment Durability (Fire will still break it.)
 - [x] OK Inf. Arrow(s)
 - [ ] Inf. Zonai Devices
-- [ ] Inf. Zonai Device Duration (No Blink + Despawn)
+- [x] Inf. Zonai Device Duration (No Blink + Despawn) OK (@redpandachannel7981)
 - [ ] Inf. Food Items
 - [ ] Inf. Food Buff Timer
 - [ ] Inf. Materials & Zonai Devices (Set To Minimum Qty.500)
@@ -51,7 +51,7 @@
 - [ ] Item Pickup Multiplier (4x)
 - [ ] Item Pickup Multiplier (8x)
 - [x] OK Ignore Material Requirements for Upgrades (Horse and Armor)
-- [ ] Show All Shrine Locations
+- [x] OK Show All Shrine Locations
 - [ ] Show All Korok Seed Locations (Must Zoom In)
 - [x] NOK Time Stop (ZL+R3Down) NE SEMBLE PAS FONCTIONNER
 - [x] NOK Time Resume (ZL+R3Up) NE SEMBLE PAS FONCTIONNER
