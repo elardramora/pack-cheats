@@ -23,10 +23,10 @@ Name: "confort/adhereclimb"; Description: "Plus de glisse lors de l'escalade."; 
 Name: "confort/durax10"; Description: "Durabilité des armes augmentée x10. (Ne pas utiliser avec un autre cheat qui touche aux armes)"; Types: custom
 Name: "confort/moonjump"; Description: "...Saute comme sur la lune (omg...maintenir X)"; Types: custom
 Name: "confort/ignrequpgrades"; Description: "Compos requises pour upgrader le stuff ignorées"; Types: custom
-Name: "confort/itempickup"; Description: "Item pickup (à tester)"; Types: custom
-Name: "confort/itempickup/x2"; Description: "Item pickup x2 (à tester)"; Types: custom; Flags: exclusive
-Name: "confort/itempickup/x4"; Description: "Item pickup x4 (à tester)"; Types: custom; Flags: exclusive
-Name: "confort/itempickup/x8"; Description: "Item pickup x8 (à tester)"; Types: custom; Flags: exclusive
+Name: "confort/itempickup"; Description: "Item pickup"; Types: custom
+Name: "confort/itempickup/x2"; Description: "Item pickup x2"; Types: custom; Flags: exclusive
+Name: "confort/itempickup/x4"; Description: "Item pickup x4"; Types: custom; Flags: exclusive
+Name: "confort/itempickup/x8"; Description: "Item pickup x8"; Types: custom; Flags: exclusive
 Name: "confort/jumphigh"; Description: "hauteur de saut augmentée"; Types: custom
 Name: "confort/nostamcharge"; Description: "Endurance des coups chargés ignorée"; Types: custom
 Name: "confort/stealthON"; Description: "Mode furtif toujours activé"; Types: custom
@@ -40,7 +40,7 @@ Name: "Damage/damageX/x4"; Description: "Dégats x4"; Types: custom; Flags: exclu
 Name: "Damage/damageX/x10"; Description: "Dégats x10"; Types: custom; Flags: exclusive
 Name: "Damage/damageX/x30"; Description: "Dégats x30"; Types: custom; Flags: exclusive
 
-Name: "Damage/MSBeam"; Description: "Le rayon des la Master Sword augmenté"; Types: custom
+Name: "Damage/MSBeam"; Description: "Le rayon de la Master Sword augmenté"; Types: custom
 
 //MOUVEMENT PAR DEFAUT//
 Name: "defaultmove"; Description: "Mouvement de Link par défaut"; Types: full compact custom; Flags: fixed
@@ -53,7 +53,7 @@ Name: "ignoreenv"; Description: "Les effets négatifs de l'environnement sont ign
 
 Name: "ignoreenv/cold"; Description: "Froid et gèle ignorés"; Types: custom
 Name: "ignoreenv/heat"; Description: "Feu et flammes ignorés"; Types: custom
-Name: "ignoreenv/gloom"; Description: "Mal des profondeurs ignoré (à changer)"; Types: custom
+Name: "ignoreenv/gloom"; Description: "Miasmes ignorés"; Types: custom
 Name: "ignoreenv/slow"; Description: "Ralentissement et paralysie ignorés"; Types: custom
 Name: "ignoreenv/termometer"; Description: "Thermomètre toujours tempéré"; Types: custom
 
@@ -64,20 +64,20 @@ Name: "infinite/arrow"; Description: "Flèches infinies"; Types: custom
 Name: "infinite/battery"; Description: "Batteries infinies"; Types: custom
 Name: "infinite/Durability"; Description: "Durabilité infinie"; Types: custom
 Name: "infinite/buff"; Description: "Bonus de nourriture infini"; Types: custom
-Name: "infinite/food"; Description: "Nourriture infinie (à tester)"; Types: custom
+Name: "infinite/food"; Description: "Nourriture infinie"; Types: custom
 Name: "infinite/health"; Description: "Coeurs infinis"; Types: custom
 Name: "infinite/zonai"; Description: "Matos et appareils Zonai infinis"; Types: custom
 Name: "infinite/stamina"; Description: "Endurance infinie (ne fonctionne que pour la quete de la Master Sword)";
 Name: "infinite/horse"; Description: "Endurance des chevaux infinie"; Types: custom
 Name: "infinite/zonaiduration"; Description: "Temps d'activité des appareils Zonai infini"; Types: custom
-Name: "infinite/zonaidevice"; Description: "Appareils Zonai infinis (à tester, doublon?)"; Types: custom
+Name: "infinite/zonaidevice"; Description: "Appareils Zonai infinis"; Types: custom
 
 //INVINCIBLE//
 Name: "invincible"; Description: "Pour compenser ta petite zézette (respect aux petits nibards par contre)"; Types: custom; Flags: fixed
 
 Name: "invincible/nohit"; Description: "Dégats des coups reçus ignorés"; Types: custom
 Name: "invincible/nofalldamage"; Description: "Dégats de chutes ignorés"; Types: custom
-Name: "invincible/godmode"; Description: "GODMODE MODAFUKA! (a tester)"; Types: custom
+Name: "invincible/godmode"; Description: "GODMODE MODAFUKA!"; Types: custom
 
 //LOCATION//
 Name: "location"; Description: "Pratique quand on n'aime pas se sortir les doigts du cul"; Types: custom; Flags: fixed
