@@ -19,65 +19,65 @@ Name: "french"; MessagesFile: "compiler:Languages\French.isl"
 //CONFORT//
 Name: "confort"; Description: "Entre confort et assistanat, il n'y a qu'un pas!"; Types: full compact custom; Flags: fixed
 
-Name: "confort/add60s"; Description: "Ajoute 60 secondes suppl√©mentaires pour les missions chronom√©tr√©es (L3+R3)"; Types: custom
+Name: "confort/add60s"; Description: "Ajoute 60 secondes supplÈmentaires pour les missions chronomÈtrÈes (L3+R3)"; Types: custom
 Name: "confort/adhereclimb"; Description: "Plus de glisse lors de l'escalade."; Types: custom
-Name: "confort/durax10"; Description: "Durabilit√© des armes augment√©e x10. (Ne pas utiliser avec un autre cheat qui touche aux armes)"; Types: custom
+Name: "confort/durax10"; Description: "DurabilitÈ des armes augmentÈe x10. (Ne pas utiliser avec un autre cheat qui touche aux armes)"; Types: custom
 Name: "confort/moonjump"; Description: "...Saute comme sur la lune (omg...maintenir X)"; Types: custom
-Name: "confort/ignrequpgrades"; Description: "Compos requises pour upgrader le stuff ignor√©es"; Types: custom
+Name: "confort/ignrequpgrades"; Description: "Compos requises pour upgrader le stuff ignorÈes"; Types: custom
 Name: "confort/itempickup"; Description: "Item pickup"; Types: custom
 Name: "confort/itempickup/x2"; Description: "Item pickup x2"; Types: custom; Flags: exclusive
 Name: "confort/itempickup/x4"; Description: "Item pickup x4"; Types: custom; Flags: exclusive
 Name: "confort/itempickup/x8"; Description: "Item pickup x8"; Types: custom; Flags: exclusive
-Name: "confort/jumphigh"; Description: "hauteur de saut augment√©e"; Types: custom
-Name: "confort/nostamcharge"; Description: "Endurance des coups charg√©s ignor√©e"; Types: custom
-Name: "confort/stealthON"; Description: "Mode furtif toujours activ√©"; Types: custom
+Name: "confort/jumphigh"; Description: "hauteur de saut augmentÈe"; Types: custom
+Name: "confort/nostamcharge"; Description: "Endurance des coups chargÈs ignorÈe"; Types: custom
+Name: "confort/stealthON"; Description: "Mode furtif toujours activÈ"; Types: custom
 
 //DAMAGE//
-Name: "Damage"; Description: "Augmentation des d√©gats (pour les fillettes aux petits bras)"; Types: full compact custom; Flags: fixed
+Name: "Damage"; Description: "Augmentation des dÈgats (pour les fillettes aux petits bras)"; Types: full compact custom; Flags: fixed
 
-Name: "Damage/damageX"; Description: "Multiplicateur de d√©gats"; Types: custom
-Name: "Damage/damageX/x2"; Description: "D√©gats x2"; Types: custom; Flags: exclusive
-Name: "Damage/damageX/x4"; Description: "D√©gats x4"; Types: custom; Flags: exclusive
-Name: "Damage/damageX/x10"; Description: "D√©gats x10"; Types: custom; Flags: exclusive
-Name: "Damage/damageX/x30"; Description: "D√©gats x30"; Types: custom; Flags: exclusive
+Name: "Damage/damageX"; Description: "Multiplicateur de dÈgats"; Types: custom
+Name: "Damage/damageX/x2"; Description: "DÈgats x2"; Types: custom; Flags: exclusive
+Name: "Damage/damageX/x4"; Description: "DÈgats x4"; Types: custom; Flags: exclusive
+Name: "Damage/damageX/x10"; Description: "DÈgats x10"; Types: custom; Flags: exclusive
+Name: "Damage/damageX/x30"; Description: "DÈgats x30"; Types: custom; Flags: exclusive
 
-Name: "Damage/MSBeam"; Description: "Le rayon de la Master Sword augment√©"; Types: custom
+Name: "Damage/MSBeam"; Description: "Le rayon de la Master Sword augmentÈ"; Types: custom
 
 //MOUVEMENT PAR DEFAUT//
-Name: "defaultmove"; Description: "Mouvement de Link par d√©faut"; Types: full compact custom; Flags: fixed
+Name: "defaultmove"; Description: "Mouvement de Link par dÈfaut"; Types: full compact custom; Flags: fixed
 
-Name: "defaultmove/run"; Description: "Courir par d√©faut"; Types: full compact custom; Flags: exclusive
-Name: "defaultmove/walk"; Description: "Marcher par d√©faut (laisser celui-ci par d√©faut)"; Types: full compact custom; Flags: exclusive
+Name: "defaultmove/run"; Description: "Courir par dÈfaut"; Types: full compact custom; Flags: exclusive
+Name: "defaultmove/walk"; Description: "Marcher par dÈfaut (laisser celui-ci par dÈfaut)"; Types: full compact custom; Flags: exclusive
 
 //EFFETS D'ENVIRONNEMENT IGNORE//
-Name: "ignoreenv"; Description: "Les effets n√©gatifs de l'environnement sont ignor√©s. Cheats ''Climatosceptiques ready''"; Types: full compact custom; Flags: fixed
+Name: "ignoreenv"; Description: "Les effets nÈgatifs de l'environnement sont ignorÈs. Cheats ''Climatosceptiques ready''"; Types: full compact custom; Flags: fixed
 
-Name: "ignoreenv/cold"; Description: "Froid et g√®le ignor√©s"; Types: custom
-Name: "ignoreenv/heat"; Description: "Feu et flammes ignor√©s"; Types: custom
-Name: "ignoreenv/gloom"; Description: "Miasmes ignor√©s"; Types: custom
-Name: "ignoreenv/slow"; Description: "Ralentissement et paralysie ignor√©s"; Types: custom
-Name: "ignoreenv/termometer"; Description: "Thermom√®tre toujours temp√©r√©"; Types: custom
+Name: "ignoreenv/cold"; Description: "Froid et gËle ignorÈs"; Types: custom
+Name: "ignoreenv/heat"; Description: "Feu et flammes ignorÈs"; Types: custom
+Name: "ignoreenv/gloom"; Description: "Miasmes ignorÈs"; Types: custom
+Name: "ignoreenv/slow"; Description: "Ralentissement et paralysie ignorÈs"; Types: custom
+Name: "ignoreenv/termometer"; Description: "ThermomËtre toujours tempÈrÈ"; Types: custom
 
 //INFINITE//
-Name: "infinite"; Description: "Vers l'infini et au-del√†!!!"; Types: custom; Flags: fixed
+Name: "infinite"; Description: "Vers l'infini et au-del‡!!!"; Types: custom; Flags: fixed
 
-Name: "infinite/arrow"; Description: "Fl√®ches infinies"; Types: custom
+Name: "infinite/arrow"; Description: "FlËches infinies"; Types: custom
 Name: "infinite/battery"; Description: "Batteries infinies"; Types: custom
-Name: "infinite/Durability"; Description: "Durabilit√© infinie"; Types: custom
+Name: "infinite/Durability"; Description: "DurabilitÈ infinie"; Types: custom
 Name: "infinite/buff"; Description: "Bonus de nourriture infini"; Types: custom
 Name: "infinite/food"; Description: "Nourriture infinie"; Types: custom
 Name: "infinite/health"; Description: "Coeurs infinis"; Types: custom
 Name: "infinite/zonai"; Description: "Matos et appareils Zonai infinis"; Types: custom
 Name: "infinite/stamina"; Description: "Endurance infinie (ne fonctionne que pour la quete de la Master Sword)";
 Name: "infinite/horse"; Description: "Endurance des chevaux infinie"; Types: custom
-Name: "infinite/zonaiduration"; Description: "Temps d'activit√© des appareils Zonai infini"; Types: custom
+Name: "infinite/zonaiduration"; Description: "Temps d'activitÈ des appareils Zonai infini"; Types: custom
 Name: "infinite/zonaidevice"; Description: "Appareils Zonai infinis"; Types: custom
 
 //INVINCIBLE//
-Name: "invincible"; Description: "Pour compenser ta petite z√©zette (respect aux petits nibards par contre)"; Types: custom; Flags: fixed
+Name: "invincible"; Description: "Pour compenser ta petite zÈzette (respect aux petits nibards par contre)"; Types: custom; Flags: fixed
 
-Name: "invincible/nohit"; Description: "D√©gats des coups re√ßus ignor√©s"; Types: custom
-Name: "invincible/nofalldamage"; Description: "D√©gats de chutes ignor√©s"; Types: custom
+Name: "invincible/nohit"; Description: "DÈgats des coups reÁus ignorÈs"; Types: custom
+Name: "invincible/nofalldamage"; Description: "DÈgats de chutes ignorÈs"; Types: custom
 Name: "invincible/godmode"; Description: "GODMODE MODAFUKA!"; Types: custom
 
 //LOCATION//
@@ -87,31 +87,31 @@ Name: "location/korogu"; Description: "Affiche tous les emplacements des Korogu 
 Name: "location/shrines"; Description: "Affiche tous les emplacements des Sanctuaires"; Types: custom
 
 //SPEEDMOD//
-Name: "speedmod"; Description: "Si tu n'as pas le temps d'appr√©cier le jeu, et pr√©f√®res te g√¢cher le jeu en vitesse"; Types: custom; Flags: fixed
+Name: "speedmod"; Description: "Si tu n'as pas le temps d'apprÈcier le jeu, et prÈfËres te g‚cher le jeu en vitesse"; Types: custom; Flags: fixed
 
-Name: "speedmod/climb"; Description: "Vitesse d'escalade augment√©e x2"; Types: custom
-Name: "speedmod/dive"; Description: "Vitesse de plong√©e augment√©e"; Types: custom
-Name: "speedmod/bowcharge"; Description: "Vitesse de bandage de l'arc augment√©e"; Types: custom
-Name: "speedmod/weaponcharge"; Description: "Vitesse de charge des armes augment√©e"; Types: custom
-Name: "speedmod/glider"; Description: "Vitesse de planage dans le vide augment√©e x3 (maintenir A)"; Types: custom
-Name: "speedmod/botnocd"; Description: "Plus de cooldown sur les capacit√© des prodiges"; Types: custom
-Name: "speedmod/bowfire"; Description: "Vitesse de tir √† l'arc augment√©e"; Types: custom
-Name: "speedmod/swim"; Description: "Vitesse de nage augment√©e x3"; Types: custom
+Name: "speedmod/climb"; Description: "Vitesse d'escalade augmentÈe x2"; Types: custom
+Name: "speedmod/dive"; Description: "Vitesse de plongÈe augmentÈe"; Types: custom
+Name: "speedmod/bowcharge"; Description: "Vitesse de bandage de l'arc augmentÈe"; Types: custom
+Name: "speedmod/weaponcharge"; Description: "Vitesse de charge des armes augmentÈe"; Types: custom
+Name: "speedmod/glider"; Description: "Vitesse de planage dans le vide augmentÈe x3 (maintenir A)"; Types: custom
+Name: "speedmod/botnocd"; Description: "Plus de cooldown sur les capacitÈ des prodiges"; Types: custom
+Name: "speedmod/bowfire"; Description: "Vitesse de tir ‡ l'arc augmentÈe"; Types: custom
+Name: "speedmod/swim"; Description: "Vitesse de nage augmentÈe x3"; Types: custom
 
-Name: "speedmod/move"; Description: "Vitesse de d√©placement augment√©e (casse le temps de jeu)"; Types: custom
+Name: "speedmod/move"; Description: "Vitesse de dÈplacement augmentÈe (casse le temps de jeu)"; Types: custom
 Name: "speedmod/move/x1"; Description: "Vitesse x1"; Types: custom; Flags: exclusive
 Name: "speedmod/move/x15"; Description: "Vitesse x1.5"; Types: custom; Flags: exclusive
 Name: "speedmod/move/x2"; Description: "Vitesse x2"; Types: custom; Flags: exclusive
 Name: "speedmod/move/x3"; Description: "Vitesse x3"; Types: custom; Flags: exclusive
 
 //TIME CONTROL//
-Name: "timecontrol"; Description: "Modification du facteur temps de la journ√©e"; Types: custom; Flags: fixed
+Name: "timecontrol"; Description: "Modification du facteur temps de la journÈe"; Types: custom; Flags: fixed
 
-Name: "timecontrol/FFW"; Description: "Avance le temps de la journ√©e (ZL+R3 √† droite)"; Types: custom
-Name: "timecontrol/RW"; Description: "Recule le temps de la journ√©e (ZL+R3 √† gauche)"; Types: custom
-Name: "timecontrol/stop"; Description: "Stop le temps de la journ√©e (ZL+R3 √† gauche)"; Types: custom
-Name: "timecontrol/resume"; Description: "Reprend le temps de la journ√©e (ZL+R3 √† gauche)"; Types: custom
-Name: "timecontrol/duration"; Description: "D√©fini le temps r√©el que dure une journ√©e compl√®te dans le jeu"; Types: custom
+Name: "timecontrol/FFW"; Description: "Avance le temps de la journÈe (ZL+R3 ‡ droite)"; Types: custom
+Name: "timecontrol/RW"; Description: "Recule le temps de la journÈe (ZL+R3 ‡ gauche)"; Types: custom
+Name: "timecontrol/stop"; Description: "Stop le temps de la journÈe (ZL+R3 ‡ gauche)"; Types: custom
+Name: "timecontrol/resume"; Description: "Reprend le temps de la journÈe (ZL+R3 ‡ gauche)"; Types: custom
+Name: "timecontrol/duration"; Description: "DÈfini le temps rÈel que dure une journÈe complËte dans le jeu"; Types: custom
 Name: "timecontrol/duration/m3"; Description: "3 minutes"; Types: custom; Flags: exclusive
 Name: "timecontrol/duration/m6"; Description: "6 minutes"; Types: custom; Flags: exclusive
 Name: "timecontrol/duration/m12"; Description: "12 minutes"; Types: custom; Flags: exclusive
@@ -1116,7 +1116,7 @@ begin
   Button2.Top := WizardForm.NextButton.Top;
   Button2.Width := WizardForm.NextButton.Width;
   Button2.Height := WizardForm.NextButton.Height;
-  Button2.Caption := 'Cha√Æne YT';
+  Button2.Caption := 'ChaÓne YT';
   Button2.OnClick := @Button2Click;
 end;
 
